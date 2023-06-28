@@ -13,7 +13,8 @@ import CustomDrawer from './CustomDrawer';
 import DrawerNav from './DrawerNav';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import FeedList from '../screens/FeedList';
+import FavoritesScreen from '../screens/FavoritesScreen';
+// import FeedList from '../screens/FavoritesScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -38,8 +39,8 @@ export function BottomTabs({navigation}) {
         }}
       />
       <Tab.Screen
-        name="Feed"
-        component={FeedList}
+        name="Favorites"
+        component={FavoritesScreen}
         options={{
           tabBarStyle: styles.tabBar,
           tabBarLabelStyle: styles.tabLabel,

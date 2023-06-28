@@ -8,7 +8,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import DrawerNav from '../components/DrawerNav';
 import {BottomTabs} from '../components/BottomTabs';
-import FeedList from '../screens/FeedList';
+import FavoritesScreen from '../screens/FavoritesScreen';
 
 export default function AppStack() {
   const Stack = createNativeStackNavigator();
@@ -20,7 +20,7 @@ export default function AppStack() {
       }}>
       <Stack.Screen name="Start" component={StartScreen} />
       <Stack.Screen name="Login" component={LoginScreen} />
-      <Stack.Screen name="Feed" component={FeedList} />
+      <Stack.Screen name="Favorites" component={FavoritesScreen} />
       <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="Drawer" component={DrawerNav} />
       {/* <Stack.Screen name="BottomTabs" component={BottomTabs} /> */}
